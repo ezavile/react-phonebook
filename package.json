@@ -1,0 +1,19 @@
+{
+  "name": "react-phonebook",
+  "version": "0.0.0-development",
+  "description": "react-phonebook is a digital address book built with React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezavile/react-phonebook.git"
+  },
+  "author": "Edgar Zavala <ezavile@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ezavile/react-phonebook/issues"
+  },
+  "homepage": "https://github.com/ezavile/react-phonebook#readme"
+}
