@@ -23,6 +23,24 @@ const commonConfig = merge([
         title: "Hi from Webpack",
       }),
     ],
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: ["style-loader", "css-loader"],
+        },
+        {
+          test: /\.scss$/,
+          use: [
+            "style-loader",
+            "css-loader",
+            {
+              loader: "fast-sass-loader",
+            }
+          ],
+        }
+      ],
+    },
   },
 ]);
 

@@ -19,7 +19,11 @@
   },
   "homepage": "https://github.com/ezavile/react-phonebook#readme",
   "devDependencies": {
+    "css-loader": "0.28.9",
+    "fast-sass-loader": "1.4.0",
     "html-webpack-plugin": "2.30.1",
+    "node-sass": "4.7.2",
+    "style-loader": "0.20.1",
     "webpack": "3.10.0",
     "webpack-dev-server": "2.11.1",
     "webpack-merge": "4.1.1"
