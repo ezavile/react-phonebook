@@ -1,27 +1,44 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const merge = require("webpack-merge");
+const utils = require("./webpack.utils");
 
 const PATHS = {
   src: path.join(__dirname, "src"),
   dist: path.join(__dirname, "dist"),
 };
 
-module.exports = {
-  devServer: {
-    stats: "errors-only",
-    host: process.env.HOST, // Defaults to `localhost`
-    port: process.env.PORT, // Defaults to 8080
+
+const commonConfig = merge([
+  {
+    entry: {
+      app: PATHS.src,
+    },
+    output: {
+      path: PATHS.dist,
+      filename: "[name].js",
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        title: "Hi from Webpack",
+      }),
+    ],
   },
-  entry: {
-    app: PATHS.src,
-  },
-  output: {
-    path: PATHS.dist,
-    filename: "[name].js",
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "Hi from Webpack",
-    }),
-  ],
+]);
+
+const productionConfig = merge([]);
+
+const developmentConfig = merge([
+  utils.devServer({
+    host: process.env.HOST,
+    port: process.env.PORT,
+  }),
+]);
+
+module.exports = env => {
+  if (env === "production") {
+    return merge(commonConfig, productionConfig);
+  }
+
+  return merge(commonConfig, developmentConfig);
 };
