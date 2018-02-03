@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const merge = require("webpack-merge");
 const utils = require("./webpack.utils");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const PATHS = {
   src: path.join(__dirname, "src"),
@@ -23,6 +24,36 @@ const commonConfig = merge([
         title: "Hi from Webpack",
       }),
     ],
+  },
+]);
+
+const productionConfig = merge([
+  {
+    module: {
+      rules: [
+        {
+          test: /\.(css|scss)$/,
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: ['css-loader', 'fast-sass-loader']
+          })
+        }
+      ]
+    },
+    plugins: [
+      new ExtractTextPlugin({
+        filename: '[name].css'
+      })
+    ]
+  }
+]);
+
+const developmentConfig = merge([
+  utils.devServer({
+    host: process.env.HOST,
+    port: process.env.PORT,
+  }),
+  {
     module: {
       rules: [
         {
@@ -34,23 +65,12 @@ const commonConfig = merge([
           use: [
             "style-loader",
             "css-loader",
-            {
-              loader: "fast-sass-loader",
-            }
+            "fast-sass-loader",
           ],
         }
       ],
     },
-  },
-]);
-
-const productionConfig = merge([]);
-
-const developmentConfig = merge([
-  utils.devServer({
-    host: process.env.HOST,
-    port: process.env.PORT,
-  }),
+  }
 ]);
 
 module.exports = env => {
