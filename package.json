@@ -11,7 +11,10 @@
     "lint": "eslint src",
     "pretest": "npm run lint",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --env=jsdom \"--coverage\"",
+    "report-coverage": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "check-coverage": "npm run coverage && http-server ./coverage/lcov-report/"
   },
   "repository": {
     "type": "git",
@@ -29,9 +32,11 @@
     "react-scripts": "1.1.0"
   },
   "devDependencies": {
+    "coveralls": "3.0.0",
     "eslint": "4.17.0",
     "eslint-config-airbnb": "16.1.0",
     "eslint-plugin-prettier": "2.6.0",
+    "http-server": "0.11.1",
     "husky": "0.14.3",
     "lint-staged": "6.1.0",
     "prettier": "1.10.2",
@@ -42,6 +47,11 @@
     "src/**/*.{js,jsx,json,css}": [
       "prettier-eslint --write",
       "git add"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/App.js"
     ]
   }
 }
