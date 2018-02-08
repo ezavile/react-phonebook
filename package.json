@@ -27,9 +27,12 @@
   },
   "homepage": ".",
   "dependencies": {
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "react-scripts": "1.1.0",
+    "react-test-renderer": "16.2.0"
   },
   "devDependencies": {
     "coveralls": "3.0.0",
@@ -51,7 +54,8 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/App.js"
+      "src/App.js",
+      "src/components/**/*.jsx"
     ]
   }
 }
