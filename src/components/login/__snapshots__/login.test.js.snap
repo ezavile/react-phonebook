@@ -2,6 +2,9 @@
 
 exports[`LoginComponent should render <Login /> 1`] = `
 Array [
-  <CardImage />,
+  <CardImage
+    image="friends.jpeg"
+    title="react-phonebook!"
+/>,
 ]
 `;

@@ -2,9 +2,14 @@
 
 exports[`CardImageComponent sould render <CardImage /> 1`] = `
 Array [
-  <img
-    alt="friends"
-    src="friends.jpeg"
-/>,
+  <div>
+    <img
+        alt="react-phonebook!"
+        src="friends.jpeg"
+    />
+    <h2>
+        react-phonebook!
+    </h2>
+</div>,
 ]
 `;
