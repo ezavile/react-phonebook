@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardImageComponent sould render <CardImage /> 1`] = `
+Array [
+  <img
+    alt="friends"
+    src="friends.jpeg"
+/>,
+]
+`;

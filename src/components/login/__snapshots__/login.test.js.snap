@@ -2,8 +2,6 @@
 
 exports[`LoginComponent should render <Login /> 1`] = `
 Array [
-  <div>
-    Hi React!
-</div>,
+  <CardImage />,
 ]
 `;

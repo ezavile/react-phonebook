@@ -1,5 +1,6 @@
 import React from 'react';
+import CardImage from '../card-image/CardImage';
 
-const Login = () => <div>Hi React!</div>;
+const Login = () => <CardImage />;
 
 export default Login;
