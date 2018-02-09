@@ -3,5 +3,6 @@
   "parser": "flow",
   "semi": true,
   "tabWidth": 2,
-  "singleQuote": true
+  "singleQuote": true,
+  "trailingComma": "all"
 }
