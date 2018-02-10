@@ -1,3 +1,3 @@
 import hi from "./sayHi";
 
-document.body.appendChild(hi("Edgar"));
+document.body.appendChild(hi("React"));
