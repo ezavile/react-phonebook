@@ -8,7 +8,9 @@
     "precommit": "lint-staged && npm run lint",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint src",
+    "lint:js": "eslint src",
+    "lint:css": "stylelint src/**/*.css",
+    "lint": "npm run lint:css && npm run lint:js",
     "pretest": "npm run lint",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -34,7 +36,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "reset-css": "2.2.1"
   },
   "devDependencies": {
     "coveralls": "3.0.0",
@@ -46,11 +49,18 @@
     "lint-staged": "6.1.0",
     "prettier": "1.10.2",
     "prettier-eslint": "8.8.1",
-    "prettier-eslint-cli": "4.7.0"
+    "prettier-eslint-cli": "4.7.0",
+    "prettier-stylelint": "0.4.2",
+    "stylelint": "8.4.0",
+    "stylelint-config-standard": "18.0.0"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
+    "src/**/*.{js,jsx,json}": [
       "prettier-eslint --write",
+      "git add"
+    ],
+    "src/**/*.css": [
+      "prettier-stylelint --write",
       "git add"
     ]
   },

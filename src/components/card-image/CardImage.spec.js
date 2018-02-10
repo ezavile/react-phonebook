@@ -14,11 +14,8 @@ describe('CardImageComponent', () => {
     expect(cardImageComponent.getElements()).toMatchSnapshot();
   });
 
-  fit('should contain an image', () => {
-    expect(cardImageComponent.find('img')).toHaveLength(1);
-    const { alt, src } = cardImageComponent.find('img').props();
-    expect(alt).toBe(title);
-    expect(src).toBe(FriendsImage);
+  it('should contain an image as background', () => {
+    expect(cardImageComponent.hasClass('CardImage')).toBe(true);
   });
 
   it('should have a title', () => {
