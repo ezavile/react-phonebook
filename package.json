@@ -8,13 +8,14 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "lint": "eslint src",
+    "lint": "eslint src --ext .js,.jsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "eslint": "4.17.0"
+    "eslint": "4.17.0",
+    "eslint-config-airbnb": "16.1.0"
   }
 }
