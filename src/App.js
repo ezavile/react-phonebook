@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// var Hola = "hola"; throw warning with npm run lint
+
 class App extends Component {
   render() {
     return (
