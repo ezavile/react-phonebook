@@ -20,5 +20,19 @@ module.exports = {
     new htmlWebpackPlugin({
       title: "Hi from Webpack"
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "fast-sass-loader"
+          }
+        ]
+      }
+    ]
+  }
 };
