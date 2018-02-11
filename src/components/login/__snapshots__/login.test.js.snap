@@ -2,9 +2,26 @@
 
 exports[`LoginComponent should render <Login /> 1`] = `
 Array [
-  <CardImage
-    image="friends.jpeg"
-    title="react-phonebook!"
-/>,
+  <section
+    className="Login"
+>
+    <CardImage
+        image="friends.jpeg"
+        title="react-phonebook!"
+    />
+    <div
+        className="Login-google"
+    >
+        <GoogleSvg />
+        <RaisedButton
+            disabled={false}
+            fullWidth={false}
+            label="Login"
+            labelPosition="after"
+            primary={false}
+            secondary={false}
+        />
+    </div>
+</section>,
 ]
 `;
