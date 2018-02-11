@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import App from './App';
+import Login from './components/login';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe('AppComponent', () => {
+  it('should render <App />', () => {
+    const appComponent = shallow(<App />);
+    expect(appComponent.find(Login)).toHaveLength(1);
+  });
 });
