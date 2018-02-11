@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContactComponent sould render <CardContact /> 1`] = `
+Array [
+  <div
+    className="CardContact"
+>
+    <div
+        className="CardContact-img"
+        style={
+            Object {
+                "backgroundImage": "url(https://randomuser.me/api/portraits/men/83.jpg)",
+              }
+        }
+    />
+    <h2
+        className="CardContact-name"
+    >
+        Edgar
+    </h2>
+    <h3
+        className="CardContact-nickname"
+    >
+        El Zavalia
+    </h3>
+    <span
+        className="CardContact-group"
+    >
+        Friends
+    </span>
+</div>,
+]
+`;
