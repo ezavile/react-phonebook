@@ -1,0 +1,15 @@
+.ContactProfile-information-item {
+  background-color: white;
+  padding: 1em;
+  border-bottom: 2px solid #fafafa;
+}
+
+.ContactProfile-information-item-title {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.ContactProfile-information-item-content {
+  display: flex;
+  align-items: center;
+}
