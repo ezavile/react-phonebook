@@ -6,7 +6,7 @@ Array [
     className="CardImage"
     style={
         Object {
-            "backgroundImage": "url(friends.jpeg)",
+            "backgroundImage": "url(path/image.png)",
           }
     }
 >

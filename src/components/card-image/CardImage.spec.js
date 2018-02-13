@@ -1,13 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import CardImage from './CardImage';
-import FriendsImage from '../login/friends.jpeg';
 
 describe('CardImageComponent', () => {
   let cardImageComponent;
   const title = 'react-phonebook!';
   beforeEach(() => {
-    cardImageComponent = shallow(<CardImage title={title} image={FriendsImage} />);
+    cardImageComponent = shallow(<CardImage title={title} image="path/image.png" />);
   });
 
   it('sould render <CardImage />', () => {
