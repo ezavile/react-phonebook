@@ -1,6 +1,13 @@
 import React from 'react';
-import Login from './components/login';
+import { Switch, Route } from 'react-router-dom';
+import Login from './scenes/login';
 
-const App = () => <Login />;
+const App = () => (
+  <main>
+    <Switch>
+      <Route exact path="/" component={Login} />
+    </Switch>
+  </main>
+);
 
 export default App;
