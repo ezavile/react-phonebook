@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListContactComponent sould render <ListContact /> 1`] = `
+Array [
+  <ListContact
+    contacts={
+        Array [
+            Object {
+              "group": "friends",
+              "id": "1",
+              "img": "https://randomuser.me/api/portraits/men/83.jpg",
+              "name": "Edgar Zavala",
+              "nickname": "ezavala",
+            },
+            Object {
+              "group": "friends",
+              "id": "2",
+              "img": "https://randomuser.me/api/portraits/men/84.jpg",
+              "name": "Juan Zavala",
+              "nickname": "jazavala",
+            },
+          ]
+    }
+/>,
+]
+`;
