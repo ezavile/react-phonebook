@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginComponent should render <Login /> 1`] = `
+Array [
+  <section
+    className="Login"
+>
+    <CardImage
+        image="friends.jpeg"
+        title="react-phonebook!"
+    />
+    <div
+        className="Login-google"
+    >
+        <GoogleSvg />
+        <RaisedButton
+            disabled={false}
+            fullWidth={false}
+            label="Login"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+        />
+        <Dialog
+            actions={
+                <FlatButton
+                    disabled={false}
+                    fullWidth={false}
+                    label="OK"
+                    labelPosition="after"
+                    labelStyle={Object {}}
+                    onClick={[Function]}
+                    onKeyboardFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onTouchStart={[Function]}
+                    primary={false}
+                    secondary={false}
+                />
+            }
+            autoDetectWindowHeight={true}
+            autoScrollBodyContent={false}
+            modal={false}
+            onRequestClose={[Function]}
+            open={false}
+            repositionOnUpdate={true}
+        />
+    </div>
+</section>,
+]
+`;

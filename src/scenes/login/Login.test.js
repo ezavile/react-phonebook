@@ -2,8 +2,7 @@ import React from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import { shallow } from 'enzyme';
 import Login from './Login';
-import CardImage from '../card-image';
-import GoogleSvg from '../google-svg';
+import { CardImage, GoogleSvg } from '../../components';
 
 describe('LoginComponent', () => {
   it('should render <Login />', () => {
