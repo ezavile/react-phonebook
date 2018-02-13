@@ -1,0 +1,44 @@
+.ContactProfile {
+  position: relative;
+}
+
+.ContactProfile-header {
+  background-color: white;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ContactProfile-img {
+  width: 4.5em;
+  height: 4.5em;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.ContactProfile-information {
+  box-shadow: 0 3px 4px -2px rgba(0, 0, 0, 0.25);
+}
+
+.ContactProfile-information-title {
+  padding: 1em;
+  font-weight: 500;
+}
+
+.ContactProfile-information-item {
+  background-color: white;
+  padding: 1em;
+  border-bottom: 2px solid #fafafa;
+}
+
+.ContactProfile-information-item-title {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.ContactProfile-information-item-content {
+  display: flex;
+  align-items: center;
+}
