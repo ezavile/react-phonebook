@@ -8,12 +8,13 @@ const ListContact = ({ contacts }) => contacts.map(contact => <CardContact key={
 ListContact.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    nickname: PropTypes.string.isRequired,
-    group: PropTypes.string.isRequired,
-  })),
+      id: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      nickname: PropTypes.string.isRequired,
+      group: PropTypes.string.isRequired,
+    }),
+  ),
 };
 
 export default ListContact;
