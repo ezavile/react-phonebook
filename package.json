@@ -29,8 +29,10 @@
   },
   "homepage": ".",
   "dependencies": {
+    "dotenv": "5.0.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
+    "firebase": "4.9.1",
     "material-ui": "0.20.0",
     "prop-types": "15.6.0",
     "react": "^16.2.0",
