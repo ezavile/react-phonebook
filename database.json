@@ -1,0 +1,40 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "img": "https://scontent.fntr6-1.fna.fbcdn.net/v/t1.0-9/14633055_1332476263464836_943635828378069124_n.jpg?oh=c17578930c8e7e7a9d88ea1593346e23&oe=5B079455",
+      "bg": "https://images.unsplash.com/photo-1502764088999-001291e403de?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fa02d6fc7d1a70beff0f21d92cd922cf&auto=format&fit=crop&w=1541&q=80",
+      "name": "Edgar Zavala",
+      "nickname": "ezavala",
+      "group": "I am",
+      "tel": "844 356 1465"
+    },
+    {
+      "id": "2",
+      "img": "https://scontent.fntr6-1.fna.fbcdn.net/v/t1.0-9/10001396_757855384249457_8852761715240189567_n.jpg?oh=db3662e97d899887dfd60606c9c07f7c&oe=5B180B86",
+      "bg": "https://images.unsplash.com/photo-1500467525088-aafe28c0a95e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1ee7e175880a6a44b5d54c4652d1dafd&auto=format&fit=crop&w=1108&q=80",
+      "name": "Juan Zavala",
+      "nickname": "jazavala",
+      "group": "Family",
+      "tel": "844 130 5138"
+    },
+    {
+      "id": "3",
+      "img": "https://scontent.fntr6-1.fna.fbcdn.net/v/t1.0-0/c0.0.370.370/p370x247/24774847_1966735966674513_6757046947159227177_n.jpg?oh=dd5af17491e214038b9fd68ddca0ef6d&oe=5B26AF1F",
+      "bg": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjE5Nzk2fQ&s=8e08aea2222d323851dcf8b210564b51",
+      "name": "Ramses De La Peña",
+      "nickname": "ram",
+      "group": "Friends",
+      "tel": "844 381 3001"
+    },
+    {
+      "id": "4",
+      "img": "https://scontent.fntr6-1.fna.fbcdn.net/v/t1.0-9/26167620_1597127323667350_6633401657770474479_n.jpg?oh=e3667e7b529fe989880461474a45a6b1&oe=5B14A9A1",
+      "bg": "https://images.unsplash.com/photo-1483122021657-524e91b4ad06?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjE5Nzk2fQ&s=0cb862df3dadccf82829b9f337e5842a",
+      "name": "César Valdez",
+      "nickname": "chicharito",
+      "group": "Friends",
+      "tel": "844 463 7723"
+    }
+  ]
+}

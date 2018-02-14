@@ -4,6 +4,7 @@ import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import firebase from 'firebase';
 import CircularProgress from 'material-ui/CircularProgress';
+import { withRouter } from 'react-router-dom';
 
 import { GoogleSvg, CardImage } from '../../components';
 import FriendsImage from './friends.jpeg';
@@ -31,10 +32,11 @@ class Login extends Component {
     this.setState({ isLoading: true });
     const provider = new firebase.auth.GoogleAuthProvider();
 
+    /* eslint react/prop-types: 0 */
     firebase
       .auth()
       .signInWithPopup(provider)
-      .then(result => console.log(result))
+      .then(() => this.props.history.push('/contacts'))
       .catch(err => {
         this.setState({ isLoading: false });
         this.handleDialogOpen();
@@ -65,4 +67,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);
