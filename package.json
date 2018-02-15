@@ -8,8 +8,7 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "format:prettier": "prettier src/**/*.{js,jsx} --write",
-    "format:eslint": "eslint src --ext .js,.jsx --fix",
+    "format": "eslint src --ext .js,.jsx --fix",
     "lint": "eslint src --ext .js,.jsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -19,6 +18,8 @@
   "devDependencies": {
     "eslint": "4.17.0",
     "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
     "prettier": "1.10.2"
   }
 }
