@@ -1,12 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-function getName({name='John',lastname='Doe',cel='1234567890',address='fake address'}) {
+
+function getName({
+  name = 'John',
+  lastname = 'Doe',
+  cel = '1234567890',
+  address = 'fake address',
+}) {
   return name + lastname + cel + address;
 }
 
-getName({name:'Edgar',lastname:'Zavala'})
+getName({ name: 'Edgar', lastname: 'Zavala' });
 
-const App = () => <div className="App"><header className="App-header"><img src={logo} className="App-logo" alt="logo" /><h1 className="App-title">Welcome to React</h1></header><p className="App-intro">To get started, edit <code>src/App.js</code> and save to reload.</p></div>;
+const App = () => (
+  <div className="App">
+    <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <h1 className="App-title">Welcome to React</h1>
+    </header>
+    <p className="App-intro">
+      To get started, edit <code>src/App.js</code> and save to reload.
+    </p>
+  </div>
+);
 
 export default App;
