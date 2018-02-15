@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as firebase from 'firebase';
 import TextField from 'material-ui/TextField';
+import { withRouter } from 'react-router-dom';
 
 import { ListContact } from '../../components';
 
@@ -32,16 +33,21 @@ class Contacts extends Component {
     this.setState({ contactsFiltered });
   };
 
+  handleClick = id => {
+    /* eslint react/prop-types: 0 */
+    this.props.history.push(`/profile/${id}`);
+  };
+
   render() {
     return (
       <section className="Contacts">
         <div className="Contacts-search">
           <TextField floatingLabelText="Search a contact" floatingLabelStyle={{ color: 'white' }} inputStyle={{ color: 'white' }} onChange={this.handleSearch} fullWidth={true} />
         </div>
-        <ListContact contacts={this.state.contactsFiltered} />
+        <ListContact contacts={this.state.contactsFiltered} handleClick={id => this.handleClick(id)} />
       </section>
     );
   }
 }
 
-export default Contacts;
+export default withRouter(Contacts);

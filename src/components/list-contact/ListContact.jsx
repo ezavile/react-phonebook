@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 
 import CardContact from '../card-contact';
 
-const ListContact = ({ contacts }) => contacts.map(contact => <CardContact key={contact.id} {...contact} />);
+const ListContact = ({ handleClick, contacts }) => contacts.map(contact => <CardContact handleClick={handleClick} key={contact.id} {...contact} />);
 
 ListContact.propTypes = {
+  handleClick: PropTypes.func.isRequired,
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
