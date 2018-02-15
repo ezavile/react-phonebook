@@ -7,7 +7,9 @@
       "name": "Edgar Zavala",
       "nickname": "ezavala",
       "group": "I am",
-      "tel": "844 356 1465"
+      "phone": "844 356 1465",
+      "email": "ezavile@gmail.com",
+      "birthdate": "27/06/1993"
     },
     {
       "id": "2",
@@ -16,7 +18,9 @@
       "name": "Juan Zavala",
       "nickname": "jazavala",
       "group": "Family",
-      "tel": "844 130 5138"
+      "phone": "844 130 5138",
+      "email": "ja.zavala.aguilar@gmail.com",
+      "birthdate": "01/06/1984"
     },
     {
       "id": "3",
@@ -25,7 +29,9 @@
       "name": "Ramses De La Peña",
       "nickname": "ram",
       "group": "Friends",
-      "tel": "844 381 3001"
+      "phone": "844 381 3001",
+      "email": "ramses.deco@gmail.com",
+      "birthdate": "05/03/1994"
     },
     {
       "id": "4",
@@ -34,7 +40,9 @@
       "name": "César Valdez",
       "nickname": "chicharito",
       "group": "Friends",
-      "tel": "844 463 7723"
+      "phone": "844 463 7723",
+      "email": "chicharito@gmail.com",
+      "birthdate": "10/05/1993"
     }
   ]
 }
