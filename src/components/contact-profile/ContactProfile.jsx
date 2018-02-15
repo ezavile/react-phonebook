@@ -7,9 +7,9 @@ import CardImage from '../card-image/CardImage';
 import './contactProfile.css';
 import ContactProfileItem from './contact-profile-item/ContactProfileItem';
 
-const ContactProfile = ({ img, name, nickname }) => (
+const ContactProfile = ({ img, bg, name, nickname, group, phone, email, birthdate }) => (
   <section className="ContactProfile">
-    <CardImage img={img} image="https://images.unsplash.com/photo-1502764088999-001291e403de?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fa02d6fc7d1a70beff0f21d92cd922cf&auto=format&fit=crop&w=1541&q=80" title={`${name} | ${nickname}`} />
+    <CardImage image={bg} title={`${name} | ${nickname}`} />
     <div className="ContactProfile-header">
       <div className="ContactProfile-img" style={{ backgroundImage: `url(${img})` }} />
       <div className="CardContact-icons">
@@ -30,13 +30,21 @@ const ContactProfile = ({ img, name, nickname }) => (
             name: 'star',
             color: yellow600,
           },
-        ].map(icon => (
-          <IconButton key={icon.name}>
+        ].map(icon => {
+          const fontIcon = (
             <FontIcon className="material-icons" color={icon.color}>
               {icon.name}
             </FontIcon>
-          </IconButton>
-        ))}
+          );
+          if (icon.name === 'phone') {
+            return (
+              <IconButton href={`tel:+${phone}`} key={icon.name}>
+                {fontIcon}
+              </IconButton>
+            );
+          }
+          return <IconButton key={icon.name}>{fontIcon}</IconButton>;
+        })}
       </div>
     </div>
     <div className="ContactProfile-information">
@@ -46,20 +54,20 @@ const ContactProfile = ({ img, name, nickname }) => (
       {[
         {
           title: 'Group',
-          content: 'Firends',
+          content: group,
         },
         {
           title: 'Phone',
-          content: '(844) 356 14 65',
+          content: phone,
         },
         {
           title: 'Email',
-          content: 'ezavile@gmail.com',
+          content: email,
         },
         {
           title: 'Birthdate',
           icon: 'card_giftcard',
-          content: '27/06/1993',
+          content: birthdate,
         },
       ].map(item => <ContactProfileItem key={item.title} {...item} />)}
     </div>
@@ -67,9 +75,14 @@ const ContactProfile = ({ img, name, nickname }) => (
 );
 
 ContactProfile.propTypes = {
+  img: PropTypes.string.isRequired,
+  bg: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   nickname: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
+  group: PropTypes.string.isRequired,
+  phone: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  birthdate: PropTypes.string.isRequired,
 };
 
 export default ContactProfile;
