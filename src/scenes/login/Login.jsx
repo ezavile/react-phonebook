@@ -47,7 +47,7 @@ class Login extends Component {
   render() {
     const action = <FlatButton label="OK" onClick={this.handleDialogClose} />;
     const isLoading = this.state.isLoading ? (
-      <div className="Login-progress">
+      <div className="u-progress">
         <CircularProgress size={80} thickness={5} />
       </div>
     ) : null;
