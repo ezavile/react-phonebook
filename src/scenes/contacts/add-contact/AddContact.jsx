@@ -10,6 +10,7 @@ import * as firebase from 'firebase';
 import LinearProgress from 'material-ui/LinearProgress';
 import Snackbar from 'material-ui/Snackbar';
 import uuid from 'uuid/v1';
+import moment from 'moment';
 
 class AddContact extends Component {
   constructor() {
@@ -135,7 +136,7 @@ class AddContact extends Component {
           <TextField floatingLabelText="Group" fullWidth={true} onChange={this.handleGroup} />
           <TextField floatingLabelText="Phone" fullWidth={true} onChange={(e, phone) => this.setState({ phone })} />
           <TextField floatingLabelText="Email" fullWidth={true} onChange={(e, email) => this.setState({ email })} />
-          <DatePicker floatingLabelText="Birthdate" onChange={(e, birthdate) => this.setState({ birthdate })} />
+          <DatePicker floatingLabelText="Birthdate" onChange={(e, birthdate) => this.setState({ birthdate: moment(birthdate).format('DD/MM/YYYY') })} />
         </Dialog>
         <Snackbar open={this.state.openSnackbar} message={this.state.snackbarMessage} autoHideDuration={1000} onRequestClose={() => this.setState({ openSnackbar: false, snackbarMessage: '' })} />
       </div>
