@@ -22,7 +22,8 @@ class Contacts extends Component {
       .ref()
       .child('contacts');
     db.on('value', snap => {
-      const contacts = snap.val();
+      let contacts = snap.val();
+      contacts = Object.values(contacts);
       this.setState({ contacts });
       this.setState({ contactsFiltered: contacts });
     });
