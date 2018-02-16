@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import * as firebase from 'firebase';
 import TextField from 'material-ui/TextField';
 import { withRouter } from 'react-router-dom';
-
 import { ListContact } from '../../components';
 
 import './contacts.css';
+import AddContact from './add-contact/AddContact';
 
 class Contacts extends Component {
   constructor() {
@@ -41,8 +41,9 @@ class Contacts extends Component {
   render() {
     return (
       <section className="Contacts">
+        <AddContact />
         <div className="Contacts-search">
-          <TextField floatingLabelText="Search a contact" floatingLabelStyle={{ color: 'white' }} inputStyle={{ color: 'white' }} onChange={this.handleSearch} fullWidth={true} />
+          <TextField floatingLabelText="Search a contact" floatingLabelStyle={{ color: 'white' }} inputStyle={{ color: 'white' }} onChange={this.handleSearch} />
         </div>
         <ListContact contacts={this.state.contactsFiltered} handleClick={id => this.handleClick(id)} />
       </section>
