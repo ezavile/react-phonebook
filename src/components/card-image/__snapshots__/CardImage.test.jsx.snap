@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardImageComponent should render <CardImage /> 1`] = `
+Array [
+  <div
+    className="CardImage"
+    style={
+        Object {
+            "backgroundImage": "url(path/image)",
+          }
+    }
+>
+    <h1
+        className="CardImage-title"
+    >
+        react-phonebook
+    </h1>
+</div>,
+]
+`;
