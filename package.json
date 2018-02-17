@@ -5,6 +5,7 @@
   "dependencies": {
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
+    "firebase": "4.10.0",
     "material-ui": "0.20.0",
     "prop-types": "15.6.0",
     "react": "^16.2.0",
