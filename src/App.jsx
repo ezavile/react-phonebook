@@ -6,7 +6,7 @@ import FontIcon from 'material-ui/FontIcon';
 import IconButton from 'material-ui/IconButton';
 import { blue900 } from 'material-ui/styles/colors';
 import firebase from 'firebase';
-import { Login, Contacts, ChatRoom } from './scenes/';
+import { Login, Contacts, ChatRoom, Profile } from './scenes/';
 
 class App extends Component {
   constructor(props) {
@@ -77,6 +77,7 @@ class App extends Component {
           <Route exact path="/" component={Login} />
           <Route exact path="/contacts" component={Contacts} />
           <Route exact path="/chat-room" component={ChatRoom} />
+          <Route exact path="/profile/:id" component={Profile} />
         </Switch>
       </main>
     );
