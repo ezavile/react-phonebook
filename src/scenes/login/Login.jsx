@@ -19,6 +19,12 @@ class Login extends Component {
     };
   }
 
+  componentWillMount() {
+    if (sessionStorage.getItem('userEmail')) {
+      this.props.history.push('/contacts');
+    }
+  }
+
   handleAuth = () => {
     this.setState({ isLoading: true });
 
