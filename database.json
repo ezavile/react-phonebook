@@ -48,5 +48,39 @@
       "email": "chicharito@gmail.com",
       "birthdate": "10/05/1993"
     }
+  ],
+  "chatroom": [
+    {
+      "id": "1",
+      "sender": {
+        "email": "ezavile@gmail.com",
+        "photo": "https://scontent.fntr6-1.fna.fbcdn.net/v/t1.0-9/14633055_1332476263464836_943635828378069124_n.jpg?oh=c17578930c8e7e7a9d88ea1593346e23&oe=5B079455"
+      },
+      "message": "Hola Grupo"
+    },
+    {
+      "id": "2",
+      "sender": {
+        "email": "chicharito@gmail.com",
+        "photo": "https://scontent.fntr6-1.fna.fbcdn.net/v/t1.0-9/26167620_1597127323667350_6633401657770474479_n.jpg?oh=e3667e7b529fe989880461474a45a6b1&oe=5B14A9A1"
+      },
+      "message": "Saquén las cheves"
+    },
+    {
+      "id": "3",
+      "sender": {
+        "email": "ezavile@gmail.com",
+        "photo": "https://scontent.fntr6-1.fna.fbcdn.net/v/t1.0-9/14633055_1332476263464836_943635828378069124_n.jpg?oh=c17578930c8e7e7a9d88ea1593346e23&oe=5B079455"
+      },
+      "message": "En corto!!!"
+    },
+    {
+      "id": "4",
+      "sender": {
+        "email": "ramses.deco@mifiel.com",
+        "photo": "https://scontent.fntr6-1.fna.fbcdn.net/v/t1.0-0/c0.0.370.370/p370x247/24774847_1966735966674513_6757046947159227177_n.jpg?oh=dd5af17491e214038b9fd68ddca0ef6d&oe=5B26AF1F"
+      },
+      "message": "Que onda vatitos"
+    }
   ]
 }
