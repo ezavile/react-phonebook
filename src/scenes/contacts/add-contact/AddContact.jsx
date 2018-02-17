@@ -33,6 +33,7 @@ class AddContact extends Component {
     phone: null,
     email: null,
     birthdate: null,
+    userId: sessionStorage.getItem('userEmail'),
   });
 
   handleOpen = () => {

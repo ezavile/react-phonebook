@@ -36,7 +36,6 @@ class Login extends Component {
     firebase
       .auth()
       .signInWithPopup(provider)
-      .then(() => this.props.history.push('/contacts'))
       .catch(err => {
         this.setState({ isLoading: false });
         this.handleDialogOpen();

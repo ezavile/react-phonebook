@@ -17,7 +17,11 @@ class App extends Component {
   componentWillMount() {
     firebase.auth().onAuthStateChanged(user => {
       if (!user) {
+        sessionStorage.removeItem('userEmail');
         this.props.history.push('/');
+      } else {
+        sessionStorage.setItem('userEmail', user.email);
+        this.props.history.push('/contacts');
       }
       this.setState({
         user,
