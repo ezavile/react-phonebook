@@ -20,6 +20,12 @@ class Login extends Component {
     };
   }
 
+  componentWillMount() {
+    if (sessionStorage.getItem('userEmail')) {
+      this.props.history.push('/contacts');
+    }
+  }
+
   handleDialogOpen = () => {
     this.setState({ isDialogOpen: true });
   };
@@ -36,6 +42,12 @@ class Login extends Component {
     firebase
       .auth()
       .signInWithPopup(provider)
+      .then(snap => {
+        const { email, photoURL } = snap.user;
+        sessionStorage.setItem('userEmail', email);
+        sessionStorage.setItem('userPhoto', photoURL);
+        this.props.history.push('/contacts');
+      })
       .catch(err => {
         this.setState({ isLoading: false });
         this.handleDialogOpen();

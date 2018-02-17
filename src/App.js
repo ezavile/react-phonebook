@@ -21,7 +21,6 @@ class App extends Component {
         this.props.history.push('/');
       } else {
         sessionStorage.setItem('userEmail', user.email);
-        this.props.history.push('/contacts');
       }
       this.setState({
         user,
