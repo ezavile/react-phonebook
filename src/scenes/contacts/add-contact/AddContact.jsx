@@ -123,7 +123,7 @@ class AddContact extends Component {
         <FloatingActionButton secondary={true} style={{ position: 'absolute', top: '1em', right: '1em', zIndex: '2' }} onClick={this.handleOpen}>
           <ContentAdd />
         </FloatingActionButton>
-        <Dialog autoScrollBodyContent={true} title="Add New Contact" actions={actions} modal={false} open={this.state.open} onRequestClose={this.handleClose}>
+        <Dialog contentStyle={{ width: '100%', maxWidth: 'none' }} autoScrollBodyContent={true} title="Add New Contact" actions={actions} modal={false} open={this.state.open} onRequestClose={this.handleClose}>
           <RaisedButton style={{ marginTop: '1em' }} fullWidth={true} containerElement="label" label="Profile Image">
             <input type="file" onChange={this.handleImg} />
             <LinearProgress mode="determinate" value={this.state.imgProgress} />
