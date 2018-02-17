@@ -1,0 +1,9 @@
+.Contacts {
+  position: relative;
+}
+
+.Contacts-search {
+  background-color: #2196f3;
+  padding: 0.5em;
+  box-shadow: 0 3px 4px -2px rgba(0, 0, 0, 0.25);
+}

@@ -14,7 +14,7 @@ const config = {
   authDomain: 'react-phonebook-2c83a.firebaseapp.com',
   databaseURL: 'https://react-phonebook-2c83a.firebaseio.com',
   projectId: 'react-phonebook-2c83a',
-  storageBucket: '',
+  storageBucket: 'react-phonebook-2c83a.appspot.com',
   messagingSenderId: '993794414277',
 };
 firebase.initializeApp(config);

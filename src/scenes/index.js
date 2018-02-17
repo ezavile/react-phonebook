@@ -1,3 +1,2 @@
-import Login from './login';
-
-export default Login;
+export { default as Login } from './login';
+export { default as Contacts } from './contacts';

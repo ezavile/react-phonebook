@@ -1,0 +1,46 @@
+.CardContact {
+  position: relative !important;
+  padding: 1em 2em 1em 6em !important;
+  min-height: 3em !important;
+  border-radius: 2px !important;
+  background-color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px !important;
+  text-align: left !important;
+  height: auto !important;
+  line-height: 1 !important;
+}
+
+.CardContact-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  width: 5em;
+  background-position: center;
+}
+
+.CardContact-name {
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+}
+
+.CardContact-nickname {
+  font-size: 1.2em;
+  color: #a1a5ae;
+}
+
+.CardContact-group {
+  position: absolute;
+  font-size: 0.9em;
+  bottom: 0.25em;
+  right: 0.25em;
+  background-color: #009ff4;
+  padding: 0.25em;
+  color: white;
+}
+
+.CardContact-icons {
+  display: flex;
+  align-items: center;
+}

@@ -7,13 +7,15 @@
     "enzyme-adapter-react-16": "1.1.1",
     "firebase": "4.10.0",
     "material-ui": "0.20.0",
+    "moment": "2.20.1",
     "prop-types": "15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "4.2.2",
     "react-scripts": "1.1.1",
     "react-test-renderer": "16.2.0",
-    "reset-css": "2.2.1"
+    "reset-css": "2.2.1",
+    "uuid": "3.2.1"
   },
   "scripts": {
     "precommit": "lint-staged && npm run lint",
