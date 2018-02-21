@@ -1,9 +1,7 @@
 import React from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 
-import CardImage from '../card-image';
-import GoogleSvg from '../google-svg';
-
+import { CardImage, GoogleSvg } from '../../components';
 import './login.css';
 
 const Login = () => (

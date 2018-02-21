@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import App from './App';
-import Login from './components/login';
+import Login from './scenes/login';
 
 describe('AppComponent', () => {
   it('should render <Login />', () => {
