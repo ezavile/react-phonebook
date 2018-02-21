@@ -1,11 +1,8 @@
 {
   "plugins": ["prettier"],
-  "extends": [
-    "react-app",
-    "airbnb",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["react-app", "airbnb", "plugin:prettier/recommended"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/jsx-boolean-value": "off"
   }
 }

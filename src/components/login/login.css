@@ -1,0 +1,9 @@
+.Login-google {
+  text-align: center;
+  padding: 4em;
+}
+
+.Login-google svg {
+  display: block !important;
+  margin: 0 auto 1em;
+}
