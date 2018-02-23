@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import firebase from 'firebase';
 import TextField from 'material-ui/TextField';
 
-import { CardContact } from '../../components';
+import { CardContact, AddContact } from '../../components';
 
 import './contacts.css';
 
@@ -62,6 +62,7 @@ class Contacts extends Component {
           />
         </div>
         {listCards}
+        <AddContact />
       </section>
     );
   }
