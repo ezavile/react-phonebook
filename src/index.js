@@ -10,7 +10,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const config = {
-  apiKey: 'AIzaSyCTYiKi7Mr7Yc8NXuZKawajWUdwBYvqEUA2',
+  apiKey: 'AIzaSyCTYiKi7Mr7Yc8NXuZKawajWUdwBYvqEUA',
   authDomain: 'react-phonebook-b7c94.firebaseapp.com',
   databaseURL: 'https://react-phonebook-b7c94.firebaseio.com',
   projectId: 'react-phonebook-b7c94',
