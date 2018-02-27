@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    if (!sessionStorage.getItem('user')) {
+    if (!sessionStorage.getItem('userEmail')) {
       this.handleLogout();
     }
 

@@ -17,7 +17,11 @@ class Contacts extends Component {
   }
 
   componentDidMount() {
-    const db = firebase.database().ref('contacts');
+    const db = firebase
+      .database()
+      .ref('contacts')
+      .orderByChild('userId')
+      .equalTo(sessionStorage.getItem('userEmail'));
 
     db.on('value', snap => {
       let contacts = snap.val();

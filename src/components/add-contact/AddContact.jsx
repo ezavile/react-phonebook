@@ -29,7 +29,7 @@ class AddContact extends Component {
       bgProgress: 0,
       img: '',
       bg: '',
-      userId: 'ezavile@gmail.com',
+      userId: sessionStorage.getItem('userEmail'),
       isOpenSnackbar: false,
       snackbarMessage: '',
     };
