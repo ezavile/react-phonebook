@@ -18,6 +18,12 @@ class Login extends Component {
     };
   }
 
+  componentWillMount() {
+    if (sessionStorage.getItem('userEmail')) {
+      this.props.history.push('/contacts');
+    }
+  }
+
   handleAuth = () => {
     this.setState({ isLoading: true });
     const gmailProvider = new firebase.auth.GoogleAuthProvider();
@@ -26,7 +32,13 @@ class Login extends Component {
     firebase
       .auth()
       .signInWithPopup(gmailProvider)
-      .then(() => this.props.history.push('/contacts'))
+      .then(snap => {
+        const { user } = snap;
+        sessionStorage.setItem('userDisplayName', user.displayName);
+        sessionStorage.setItem('userEmail', user.email);
+        sessionStorage.setItem('userPhoto', user.photoURL);
+        this.props.history.push('/contacts');
+      })
       .catch(err => {
         this.setState({
           isLoading: false,
