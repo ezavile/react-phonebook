@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
 import TextField from 'material-ui/TextField';
+import { withRouter } from 'react-router-dom';
 
 import { CardContact, AddContact } from '../../components';
 
@@ -39,7 +40,9 @@ class Contacts extends Component {
   };
 
   goToProfile = id => () => {
-    console.log(id);
+    /* eslint react/prop-types: 0 */
+
+    this.props.history.push(`/profile/${id}`);
   };
 
   render() {
@@ -68,4 +71,4 @@ class Contacts extends Component {
   }
 }
 
-export default Contacts;
+export default withRouter(Contacts);
