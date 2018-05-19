@@ -13,17 +13,17 @@
   <script>
     var HelloReactES5 = React.createClass({
       render: function() {
-        return React.createElement('h1', null, 'React Using ES5');
+        return React.createElement('h1', null, 'My name is ' + this.props.name );
       }
     });
 
     ReactDOM.render(
-      React.createElement(HelloReactES5, null, null),
+      React.createElement(HelloReactES5, { name: 'Edgar' }, null),
       document.getElementById('app')
     );
 
-    // const HelloReactES5 = () => <h1>React using es5</h1>;
-    // <hello-react-es5 />
+    // const HelloReactES5 = (name) => <h1>My name is {name}</h1>;
+    // <hello-react-es5 name="Edgar" />
   </script>
 </body>
 </html>
