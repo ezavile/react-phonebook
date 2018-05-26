@@ -5,6 +5,10 @@ const src = path.join(__dirname, 'src');
 const dist = path.join(__dirname, 'dist');
 
 module.exports = {
+  devServer: {
+    host: 'localhost',
+    port: 3000
+  },
   entry: {
     app: src
   },
