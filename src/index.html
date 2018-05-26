@@ -11,19 +11,69 @@
   <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.0/react.js"></script> 
   <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.0/react-dom.js"></script>
   <script>
-    var HelloReactES5 = React.createClass({
+    var MyNameComponet = React.createClass({
       render: function() {
         return React.createElement('h1', null, 'My name is ' + this.props.name );
       }
     });
 
+    var MyCelComponet = React.createClass({
+      render: function() {
+        return React.createElement('h1', null, 'My cel is ' + this.props.cel );
+      }
+    });
+
+    var MyInfoComponent = React.createClass({
+      render: function() {
+        return React.createElement(
+          'div',
+          null,
+          'My info is: ',
+          React.createElement(
+            MyNameComponet,
+            {
+              name: this.props.name
+            }
+          ),
+          React.createElement(
+            MyCelComponet,
+            {
+              cel: this.props.cel
+            }
+          )
+        )
+      }
+    })
+
     ReactDOM.render(
-      React.createElement(HelloReactES5, { name: 'Edgar' }, null),
+      React.createElement(MyInfoComponent, { name: 'Edgar', cel: '844 1234567890' }, null),
       document.getElementById('app')
     );
 
-    // const HelloReactES5 = (name) => <h1>My name is {name}</h1>;
-    // <hello-react-es5 name="Edgar" />
+    /*
+    const MyInfoComponent = ({ name, cel }) => {
+      return(
+        <div>
+          <MyNameComponet name={name} />
+          <MyCelComponet cel={cel} />
+        </div>
+      )
+    };
+    
+    const students = [
+      {
+        name: "edgar",
+        cel: "1234567890"
+      },
+      {
+        name: "edson",
+        cel: "0987654321"
+      }
+    ]
+
+    {students.map(({ name, cel}) => <MyInfoComponent name={name} cel={cel} />)}
+    */
+
   </script>
 </body>
 </html>
