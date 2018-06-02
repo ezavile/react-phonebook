@@ -1,19 +1,43 @@
 {
   "name": "react-phonebook",
-  "version": "0.0.0-development",
-  "description": "react-phonebook is a digital address book built with React",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "16.4.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src --ext .js,.jsx",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ezavile/react-phonebook.git"
+  "devDependencies": {
+    "babel-eslint": "8.2.3",
+    "babel-jest": "23.0.1",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-react": "7.8.2",
+    "husky": "0.14.3",
+    "lint-staged": "7.1.3",
+    "prettier": "1.13.4"
   },
-  "author": "Edgar Zavala <ezavile@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ezavile/react-phonebook/issues"
-  },
-  "homepage": "https://github.com/ezavile/react-phonebook#readme"
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
 }

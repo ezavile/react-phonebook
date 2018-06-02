@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "trailingComma": "es5",
+        "semi": true,
+        "tabWidth": 2,
+        "singleQuote": true
+      }
+    ]
+  }
+}
