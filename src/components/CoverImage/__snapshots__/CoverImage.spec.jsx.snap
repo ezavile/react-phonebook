@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoverImageComponent should render <CoverImage /> 1`] = `
+Array [
+  <div
+    className="CoverImage"
+    style={
+        Object {
+            "backgroundImage": "url(/path/img.png)",
+          }
+    }
+>
+    <h1
+        className="CoverImage-title"
+    >
+        some title
+    </h1>
+</div>,
+]
+`;

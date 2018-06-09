@@ -5,10 +5,12 @@
   "dependencies": {
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
+    "prop-types": "15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
-    "react-test-renderer": "16.4.0"
+    "react-test-renderer": "16.4.0",
+    "reset-css": "3.0.0"
   },
   "scripts": {
     "lint": "eslint src --ext .js,.jsx",
